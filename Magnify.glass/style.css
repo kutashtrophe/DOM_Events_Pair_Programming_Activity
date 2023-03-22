@@ -8,18 +8,15 @@ body {
 .container {
   margin: 0 auto;
   margin-top: 5rem;
-  height: 50%;
-  width: 85%;
-  border: 1px green solid;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 p {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
@@ -28,4 +25,16 @@ p {
   justify-content: center;
   align-items: center;
   margin: auto;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+button {
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 15%;
 }
