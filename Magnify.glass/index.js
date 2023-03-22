@@ -1,7 +1,15 @@
-const count = document.querySelector(".number")
-let counter = 0
-const image = document.getElementById("img")
-image.addEventListener('click', function() {
-	counter++
-	count.innerText = counter;	
+const p = document.querySelector("p");
+
+const minimize = document.querySelector("#minimize");
+minimize.addEventListener('click', function() {	
+	const currentFontSize = parseInt(getComputedStyle(p).fontSize);
+	const newFontSize = currentFontSize - 6; 
+	p.style.fontSize = newFontSize + "px";
+})
+
+const magnify = document.querySelector("#magnify")
+magnify.addEventListener('click', function() {	
+	const currentFontSize = parseInt(getComputedStyle(p).fontSize);
+	const newFontSize = currentFontSize + 6; 
+	p.style.fontSize = newFontSize + "px";
 })
