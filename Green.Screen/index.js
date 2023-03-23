@@ -1,8 +1,7 @@
-const input = document.querySelector("#bgColor")
-const button = document.querySelector("input")[1];
+let colorInput = document.getElementById("bgColor").innerHTML
+const button = document.querySelector("button")
 
 button.addEventListener("click", function() {
-    
-    document.body.style.backgroundColor = input.innerHTML 
+    let color = colorInput
+    document.body.style.backgroundColor = color
 })
-
